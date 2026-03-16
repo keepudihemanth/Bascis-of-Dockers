@@ -1,4 +1,4 @@
-FROM node:alpine
-COPY . /app
+FROM python:3.11
 WORKDIR /app
-CMD ["node", "app.js"]
+COPY . .
+CMD ["python", "app.py"]
